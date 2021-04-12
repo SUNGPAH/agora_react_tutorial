@@ -3,9 +3,6 @@ import AgoraRTC from "agora-rtc-sdk-ng";
 import './App.css';
 // import ReactDOM from 'react-dom';
 
-//auth..!
-//접속을 하려면.. 
-
 var client = AgoraRTC.createClient({ mode: "rtc", codec: "h264" });
 var localTracks = {
   videoTrack: null,
@@ -90,7 +87,8 @@ function App() {
     await client.subscribe(user, mediaType);
     console.log("subscribe success");
     if (mediaType === 'video') {
-      
+      //uid - 
+
       if(uids.includes(uid)){
         //pass
       }else{
